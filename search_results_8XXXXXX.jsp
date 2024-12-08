@@ -50,7 +50,7 @@
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="search_employee_8XXXXXX.jsp">Search</a></li>			
+						<li><a href="search_employee_8XXXXXX.jsp">Search</a></li>			
 						<li><a href="add_employee_8XXXXXX.jsp ">Add Employee</a></li>					
 					</ul>		
 		
@@ -68,33 +68,8 @@
 
 			<!-- Page Title -->
 			<div class="page-header">
-				<h1>Αναζήτηση Υπαλλήλου</h1>
+				<h1>Υπαλλήλοι εταιρείας</h1>
 			</div>
-
-			<!--Form-->
-			<form action="search_results_8XXXXXX.jsp" method="POST" class="form-horizontal">
-
-				<!--Name-->
-				<div class="form-group">
-					<label for="afm" class="col-sm-3 control-label main-label">Εισάγετε το ΑΦΜ ή το όνομα ή το επώνυμο του Υπαλλήλου</label>
-					<div class="col-sm-3">
-					<input type="text" name="afm" class="form-control" id="afm" placeholder="Insert Employee AFM, first name or last name (ex: Alan, Duly)">
-					</div>
-				</div>
-
-
-				<!--Button Fields-->
-				<div class="form-group">
-					<div class="col-sm-offset-3 col-sm-3">
-						<button type="submit" class="btn btn-success btn-lg">
-						<span class="glyphicon glyphicon-ok"></span> Αναζήτηση
-						</button> 
-						<button type="reset" class="btn btn-danger btn-lg">
-						<span class="glyphicon glyphicon-remove"></span> Άκυρο
-						</button> 
-					</div>
-				</div>
-			</form>
 			
 		</div>
 
