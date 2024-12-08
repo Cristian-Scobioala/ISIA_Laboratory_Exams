@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="java.util.ArrayList" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -74,9 +75,9 @@
 
 <% 
 if (request.getAttribute("error_message") != null) {
+	ArrayList<String> list = (ArrayList<String>) request.getAttribute("error_message");
 %>
 			<div class="alert alert-danger" role="alert">
-				ArrayList<String> list = request.getAttribute("error_message");
 				<ol>
 				<% for (String item: list) { %>							
 					<li><%=item %></li>
