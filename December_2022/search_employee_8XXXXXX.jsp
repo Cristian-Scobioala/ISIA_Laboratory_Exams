@@ -51,7 +51,7 @@
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="search_employee_8XXXXXX.jsp">Search</a></li>			
-						<li><a href="add_employee_8XXXXXX.jsp ">Add Employee</a></li>					
+						<li><a href="add_employee_8XXXXXX.jsp">Add Employee</a></li>					
 					</ul>		
 		
 				</div>
