@@ -2,15 +2,15 @@ package December_2021.labexams_12_2021_8XXXXXX;
 
 public class Car {
         private String carCode;
-        private String firm;
+        private String brand;
         private String model;
         private int year;
         private int hasDiscount;
         private int isNew;
 
-        public Car(String carCode, String firm, String model, int year, int hasDiscount, int isNew) {
+        public Car(String carCode, String brand, String model, int year, int hasDiscount, int isNew) {
                 this.carCode = carCode;
-                this.firm = firm;
+                this.brand = brand;
                 this.model = model;
                 this.year = year;
                 this.hasDiscount = hasDiscount;
@@ -21,8 +21,8 @@ public class Car {
                 return this.carCode;
         }
 
-        public String getFirm() {
-                return this.firm;
+        public String getbrand() {
+                return this.brand;
         }
 
         public String getModel() {
@@ -45,8 +45,8 @@ public class Car {
                 this.carCode = carCode;
         }
 
-        public void setFirm(String firm) {
-                this.firm = firm;
+        public void setbrand(String brand) {
+                this.brand = brand;
         }
 
         public void setModel(String model) {
