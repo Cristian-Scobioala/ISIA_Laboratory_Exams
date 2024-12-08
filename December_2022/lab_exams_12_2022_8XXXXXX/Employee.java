@@ -6,7 +6,7 @@ public class Employee {
         private String firstname;
         private String lastname;
         private double salary;
-        private int isExternalCollaborator; // boolean => 0 or 1
+        private int isExternal;
 
         /**
          * Full constuctor
@@ -15,15 +15,15 @@ public class Employee {
          * @param firstname
          * @param lastname
          * @param salary
-         * @param isExternalCollaborator
+         * @param isExternal
          */
         public Employee(String afm, String firstname, String lastname, double salary,
-                        int isExternalCollaborator) {
+                        int isExternal) {
                 this.afm = afm;
                 this.firstname = firstname;
                 this.lastname = lastname;
                 this.salary = salary;
-                this.isExternalCollaborator = isExternalCollaborator;
+                this.isExternal = isExternal;
         }
 
         public String getAfm() {
@@ -42,8 +42,8 @@ public class Employee {
                 return this.salary;
         }
 
-        public int getIsExternalCollaborator() {
-                return this.isExternalCollaborator;
+        public int getisExternal() {
+                return this.isExternal;
         }
 
         public void setAfm(String afm) {
@@ -62,7 +62,7 @@ public class Employee {
                 this.salary = salary;
         }
 
-        public void setIsExternalCollaborator(int isExternalCollaborator) {
-                this.isExternalCollaborator = isExternalCollaborator;
+        public void setisExternal(int isExternal) {
+                this.isExternal = isExternal;
         }
 }
