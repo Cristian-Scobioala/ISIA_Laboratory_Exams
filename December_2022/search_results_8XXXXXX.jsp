@@ -68,7 +68,7 @@
 
 			<!-- Page Title -->
 			<div class="page-header">
-				<h1>Υπαλλήλοι εταιρείας</h1>
+				<h1></h1>
 			</div>
 			
 		</div>
@@ -78,7 +78,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <p class="text-center">&copy; Copyright 2024 by examY</p>
+                        <p class="text-center">&copy; Copyright 2022 by examY</p>
                     </div>
                 </div>
             </div>

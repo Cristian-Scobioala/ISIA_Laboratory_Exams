@@ -76,23 +76,20 @@
 
 				<!--Name-->
 				<div class="form-group">
-					<label for="afm" class="col-sm-3 control-label main-label">Εισάγετε το ΑΦΜ ή το όνομα ή το επώνυμο του Υπαλλήλου</label>
-					<div class="col-sm-3">
-					<input type="text" name="afm" class="form-control" id="afm" placeholder="Insert Employee AFM, first name or last name (ex: Alan, Duly)">
+					<div class="form-group">
+						<label for="afm">Εισάγετε το ΑΦΜ ή το όνομα ή το επώνυμο του Υπαλλήλου</label>
+						<input type="text" class="form-control" id="afm" placeholder="Insert Employee AFM, first name or last name (ex: Alan, Duly)">
 					</div>
 				</div>
 
-
 				<!--Button Fields-->
 				<div class="form-group">
-					<div class="col-sm-offset-3 col-sm-3">
-						<button type="submit" class="btn btn-success btn-lg">
+					<button type="submit" class="btn btn-success btn-lg">
 						<span class="glyphicon glyphicon-ok"></span> Αναζήτηση
-						</button> 
-						<button type="reset" class="btn btn-danger btn-lg">
+					</button> 
+					<button type="reset" class="btn btn-danger btn-lg">
 						<span class="glyphicon glyphicon-remove"></span> Άκυρο
-						</button> 
-					</div>
+					</button> 
 				</div>
 			</form>
 			
@@ -103,7 +100,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <p class="text-center">&copy; Copyright 2024 by examY</p>
+                        <p class="text-center">&copy; Copyright 2022 by examY</p>
                     </div>
                 </div>
             </div>

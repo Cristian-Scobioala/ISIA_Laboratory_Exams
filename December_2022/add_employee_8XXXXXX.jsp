@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import=""java.util.ArrayList"%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -71,67 +72,92 @@
 				<h1>Εισαγωγή Υπαλλήλου</h1>
 			</div>
 
-			
-		</div>
-
-        <!--Form-->
-		<form action="registerController_ex3_8220066.jsp" method="POST" class="form-horizontal">
-
-			<!--AFM-->
-			<div class="form-group">
-				<label for="afm" class="col-sm-3 control-label main-label">ΑΦΜ: </label>
-				<div class="col-sm-9">
-				<input type="text" name="afm" class="form-control" id="afm" placeholder="999">
-				</div>
+<% 
+if (request.getAttribute("error_message") != null) {
+%>
+			<div class="alert alert-danger" role="alert">
+				ArrayList<String> list = request.getAttribute("error_message");
+				<ol>
+				<% for (String item: list) { %>							
+					<li><%=item %></li>
+				<% } %>
+				</ol> 
 			</div>
+<%
+}
+%>
 
-			<!--Name-->
-			<div class="form-group">
-				<label for="name" class="col-sm-3 control-label main-label">Όνομα: </label>
-				<div class="col-sm-9">
-				<input type="text" name="name" class="form-control" id="name" placeholder="A">
-				</div>
-			</div>
+			<!--Form-->
+			<form action="register_employee_controller_8XXXXXX.jsp" method="POST" class="form-horizontal">
 
-			<!--Surname-->
-			<div class="form-group">
-				<label for="surname" class="col-sm-3 control-label main-label">Επώνυμο: </label>
-				<div class="col-sm-9">
-					<input type="text" name="surname" class="form-control" id="surname" placeholder="Jo">
+				<!--AFM-->
+				<div class="form-group">
+					<label for="afm" class="col-sm-3 control-label main-label">ΑΦΜ: </label>
+					<div class="col-sm-9">
+					<input type="text" name="afm" class="form-control" id="afm" placeholder="999">
+					</div>
 				</div>
-			</div>
 
-			<!--Salary-->
-			<div class="form-group">
-				<label for="salary" class="col-sm-3 control-label main-label">Μισθός: </label>
-				<div class="col-sm-9">
-					<input type="number" name="salary" class="form-control" id="salary" placeholder="-200">
+				<!--Name-->
+				<div class="form-group">
+					<label for="name" class="col-sm-3 control-label main-label">Όνομα: </label>
+					<div class="col-sm-9">
+					<input type="text" name="name" class="form-control" id="name" placeholder="A">
+					</div>
 				</div>
-			</div>
-			
-			<!--Εxternal Partner-->
-			<div class="form-group">
-				<label for="external" class="col-sm-3 control-label main-label">Εξωτερικός Συνεργάτης: </label>
-				<div class="col-sm-9">
-					<div class="checkbox">
+
+				<!--Surname-->
+				<div class="form-group">
+					<label for="surname" class="col-sm-3 control-label main-label">Επώνυμο: </label>
+					<div class="col-sm-9">
+						<input type="text" name="surname" class="form-control" id="surname" placeholder="Jo">
+					</div>
+				</div>
+
+				<!--Salary-->
+				<div class="form-group">
+					<label for="salary" class="col-sm-3 control-label main-label">Μισθός: </label>
+					<div class="col-sm-9">
+						<input type="number" name="salary" class="form-control" id="salary" placeholder="-200">
+					</div>
+				</div>
+				
+				<!--Εxternal Partner-->
+				<div class="form-group">
+					<label class="col-sm-3 control-label main-label">Εξωτερικός Συνεργάτης: </label>
+					<div class="col-sm-9">
+						<label class="checkbox-inline">
 						<input type="checkbox" name="external"> ΝΑΙ
 						</label>
 					</div>
 				</div>
-			</div>
 
-			<!--Button Fields-->
-			<div class="form-group">
-				<div class="col-sm-offset-3 col-sm-9">
-					<button type="submit" class="btn btn-success btn-lg">
-					<span class="glyphicon glyphicon-ok"></span> Submit
-					</button> 
-					<button type="reset" class="btn btn-danger btn-lg">
-					<span class="glyphicon glyphicon-remove"></span> Cancel
-					</button> 
+				
+				<!--Button Fields-->
+				<div class="form-group">
+					<div class="col-sm-offset-3 col-sm-9">
+						<button type="submit" class="btn btn-success btn-lg">
+						<span class="glyphicon glyphicon-ok"></span> Submit
+						</button> 
+						<button type="reset" class="btn btn-danger btn-lg">
+						<span class="glyphicon glyphicon-remove"></span> Cancel
+						</button> 
+					</div>
 				</div>
-			</div>
-		</form>
+			</form>
+		</div>
+
+		<!-- footer -->
+        <footer class="navbar-inverse">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p class="text-center">&copy; Copyright 2022 by examY</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End footer -->
 
         <!-- =================== Place all javascript at the end of the document so the pages load faster =================== -->
         <!-- jQuery library -->
