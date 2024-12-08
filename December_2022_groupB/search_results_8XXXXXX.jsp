@@ -24,8 +24,8 @@
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-		<meta name="description" content="Search Car">
-		<title>Search Car</title>
+		<meta name="description" content="Search Products">
+		<title>Search Products</title>
 
 		<!--additional style-->
 		<style type="text/css">
@@ -50,7 +50,8 @@
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="search_car_8XXXXXX.jsp">Search</a></li>				
+						<li><a href="search_product_8XXXXXX.jsp">Search</a></li>			
+						<li><a href="add_product_8XXXXXX.jsp ">Add Product</a></li>					
 					</ul>		
 		
 				</div>
@@ -67,40 +68,10 @@
 
 			<!-- Page Title -->
 			<div class="page-header">
-				<h1>Αναζήτηση Αυτοκινήτου</h1>
+				<h1>
+					<!--todo-->
+				</h1>
 			</div>
-
-			<!--Form-->
-			<form action="search_results_8XXXXXX.jsp" method="POST" class="form-horizontal">
-
-<%
-if (request.getAttribute("error_message") != null) {
-%>
-                <div class="alert alert-danger" role="alert"> 
-                    <%=(String) request.getAttribute("error_message")%>
-                </div>
-<%
-}
-%>
-
-				<!--Info: brand or model-->
-				<div class="form-group">
-					<div class="form-group">
-						<label for="info">Εισάγετε τη μάρκα ή το μοντέλο του αυτοκινήτου</label>
-						<input type="text" name="info" class="form-control" id="info" placeholder="Insert Car brand name or mode (ex: BMW, Golf)">
-					</div>
-				</div>
-
-				<!--Button Fields-->
-				<div class="form-group">
-					<button type="submit" class="btn btn-success btn-lg">
-						<span class="glyphicon glyphicon-ok"></span> Αναζήτηση
-					</button> 
-					<button type="reset" class="btn btn-danger btn-lg">
-						<span class="glyphicon glyphicon-remove"></span> Άκυρο
-					</button> 
-				</div>
-			</form>
 			
 		</div>
 
@@ -109,7 +80,7 @@ if (request.getAttribute("error_message") != null) {
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <p class="text-center">&copy; Copyright 2021 by examY</p>
+                        <p class="text-center">&copy; Copyright 2022 by examY</p>
                     </div>
                 </div>
             </div>

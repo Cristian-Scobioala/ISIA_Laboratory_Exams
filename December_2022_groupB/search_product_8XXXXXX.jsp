@@ -24,8 +24,8 @@
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-		<meta name="description" content="Search Car">
-		<title>Search Car</title>
+		<meta name="description" content="Search Product">
+		<title>Search Product</title>
 
 		<!--additional style-->
 		<style type="text/css">
@@ -50,7 +50,8 @@
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="search_car_8XXXXXX.jsp">Search</a></li>				
+						<li class="active"><a href="search_product_8XXXXXX.jsp">Search</a></li>			
+						<li><a href="add_product_8XXXXXX.jsp">Add Product</a></li>					
 					</ul>		
 		
 				</div>
@@ -67,27 +68,17 @@
 
 			<!-- Page Title -->
 			<div class="page-header">
-				<h1>Αναζήτηση Αυτοκινήτου</h1>
+				<h1>Αναζήτηση Προϊόντος</h1>
 			</div>
 
 			<!--Form-->
 			<form action="search_results_8XXXXXX.jsp" method="POST" class="form-horizontal">
 
-<%
-if (request.getAttribute("error_message") != null) {
-%>
-                <div class="alert alert-danger" role="alert"> 
-                    <%=(String) request.getAttribute("error_message")%>
-                </div>
-<%
-}
-%>
-
-				<!--Info: brand or model-->
+				<!--Info: code, name or company name-->
 				<div class="form-group">
 					<div class="form-group">
-						<label for="info">Εισάγετε τη μάρκα ή το μοντέλο του αυτοκινήτου</label>
-						<input type="text" name="info" class="form-control" id="info" placeholder="Insert Car brand name or mode (ex: BMW, Golf)">
+						<label for="info">Εισάγετε τον κωδικό ή το όνομα ή το όνομα της εταιρείας του Προϊόντος</label>
+						<input type="text" name="info" class="form-control" id="info" placeholder="Insert Product code, name or company (ex: Wine, Rowe)">
 					</div>
 				</div>
 
@@ -109,7 +100,7 @@ if (request.getAttribute("error_message") != null) {
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <p class="text-center">&copy; Copyright 2021 by examY</p>
+                        <p class="text-center">&copy; Copyright 2022 by examY</p>
                     </div>
                 </div>
             </div>

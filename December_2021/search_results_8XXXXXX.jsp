@@ -67,7 +67,9 @@
 
 			<!-- Page Title -->
 			<div class="page-header">
-				<h1></h1>
+				<h1>
+					<!--TODO-->
+				</h1>
 			</div>
 			
 		</div>

@@ -1,5 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page import=""java.util.ArrayList"%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +16,7 @@
         <link rel="stylesheet" href="<%=request.getContextPath() %>/css/bootstrap-theme.min.css">
 
         <!-- Custom styles for this template -->
-        <link href="<%=request.getContextPath() %>/css/theme_8XXXXXX.css" rel="stylesheet">
+        <link href="i<%=request.getContextPath() %>/css/theme_8XXXXXX.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -25,8 +24,8 @@
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-		<meta name="description" content="Add Employee">
-		<title>Add Employee</title>
+		<meta name="description" content="Template">
+		<title>Template</title>
 
 		<!--additional style-->
 		<style type="text/css">
@@ -51,8 +50,7 @@
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li><a href="search_employee_8XXXXXX.jsp">Search</a></li>			
-						<li class="active"><a href="add_employee_8XXXXXX.jsp">Add Employee</a></li>					
+						<li class="active"><a href="template.html">Template</a></li>			
 					</ul>		
 		
 				</div>
@@ -69,90 +67,60 @@
 
 			<!-- Page Title -->
 			<div class="page-header">
-				<h1>Εισαγωγή Υπαλλήλου</h1>
+				<h1>Found <code>10</code></h1>
 			</div>
 
-<% 
-if (request.getAttribute("error_message") != null) {
-%>
-			<div class="alert alert-danger" role="alert">
-				ArrayList<String> list = request.getAttribute("error_message");
-				<ol>
-				<% for (String item: list) { %>							
-					<li><%=item %></li>
-				<% } %>
-				</ol> 
-			</div>
-<%
-}
-%>
+			<!--center-->
+            <div class="alert alert-danger text-center" role="alert">Danger</div>
 
-			<!--Form-->
-			<form action="register_employee_controller_8XXXXXX.jsp" method="POST" class="form-horizontal">
+			<!--bold-->
+            <div class="alert alert-success" role="alert"><b>Success</b></div>
 
-				<!--AFM-->
-				<div class="form-group">
-					<label for="afm" class="col-sm-3 control-label main-label">ΑΦΜ: </label>
-					<div class="col-sm-9">
-					<input type="text" name="afm" class="form-control" id="afm" placeholder="999">
-					</div>
-				</div>
+			<!--normal-->
+            <div class="alert alert-info" role="alert">Info</div>
+            <div class="alert alert-warning" role="alert">Warning</div>
 
-				<!--Name-->
-				<div class="form-group">
-					<label for="name" class="col-sm-3 control-label main-label">Όνομα: </label>
-					<div class="col-sm-9">
-					<input type="text" name="name" class="form-control" id="name" placeholder="A">
-					</div>
-				</div>
 
-				<!--Surname-->
-				<div class="form-group">
-					<label for="surname" class="col-sm-3 control-label main-label">Επώνυμο: </label>
-					<div class="col-sm-9">
-						<input type="text" name="surname" class="form-control" id="surname" placeholder="Jo">
-					</div>
-				</div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>Users <span class="badge">30</span></h2>
+                </div>
 
-				<!--Salary-->
-				<div class="form-group">
-					<label for="salary" class="col-sm-3 control-label main-label">Μισθός: </label>
-					<div class="col-sm-9">
-						<input type="number" name="salary" class="form-control" id="salary" placeholder="-200">
-					</div>
-				</div>
-				
-				<!--Εxternal Partner-->
-				<div class="form-group">
-					<label class="col-sm-3 control-label main-label">Εξωτερικός Συνεργάτης: </label>
-					<div class="col-sm-9">
-						<label class="checkbox-inline">
-						<input type="checkbox" name="external"> ΝΑΙ
-						</label>
-					</div>
-				</div>
+            </div>
 
-				
-				<!--Button Fields-->
-				<div class="form-group">
-					<div class="col-sm-offset-3 col-sm-9">
-						<button type="submit" class="btn btn-success btn-lg">
-						<span class="glyphicon glyphicon-ok"></span> Submit
-						</button> 
-						<button type="reset" class="btn btn-danger btn-lg">
-						<span class="glyphicon glyphicon-remove"></span> Cancel
-						</button> 
-					</div>
-				</div>
-			</form>
+			<table class="table table-bordered">
+				<tr class="info">
+					<td>A/A</td>
+					<td>Last Name</td>
+					<td>First Name</td>
+					<td>Email</td>
+				</tr>
+
+                <tr>
+					<td>1</td>
+					<td>Doe</td>
+					<td>Ji</td>
+					<td>jdoe@aueb.gr</td>
+				</tr>
+
+                <tr class="success">
+					<td>2</td>
+					<td>Call</td>
+					<td>Michelle</td>
+					<td>mcall@aueb.gr</td>
+				</tr>
+
+            </table>
+
+			
 		</div>
 
-		<!-- footer -->
+        <!-- footer -->
         <footer class="navbar-inverse">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <p class="text-center">&copy; Copyright 2022 by examY</p>
+                        <p class="text-center">&copy; Copyright 2021 by examY</p>
                     </div>
                 </div>
             </div>
