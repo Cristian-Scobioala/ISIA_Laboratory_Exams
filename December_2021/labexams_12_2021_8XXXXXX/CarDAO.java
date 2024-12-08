@@ -28,6 +28,13 @@ public class CarDAO {
                 // ΘΕΜΑ 1Β
         }
 
-        public List<Car>
+        /**
+         * This method returns a List with all Cars
+         * 
+         * @return List<Car>
+         */
+        public List<Car> getCars() throws Exception {
+                // ΘΕΜΑ 3D
+        }
 
 }

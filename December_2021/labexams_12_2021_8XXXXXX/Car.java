@@ -5,16 +5,16 @@ public class Car {
         private String firm;
         private String model;
         private int year;
-        private int hasDiscount; // int that can be 0 or 1 => boolean
-        private String condition;
+        private int hasDiscount;
+        private int isNew;
 
-        public Car(String carCode, String firm, String model, int year, int hasDiscount, String condition) {
+        public Car(String carCode, String firm, String model, int year, int hasDiscount, int isNew) {
                 this.carCode = carCode;
                 this.firm = firm;
                 this.model = model;
                 this.year = year;
                 this.hasDiscount = hasDiscount;
-                this.condition = condition;
+                this.isNew = isNew;
         }
 
         public String getCarCode() {
@@ -37,8 +37,8 @@ public class Car {
                 return this.hasDiscount;
         }
 
-        public String getCondition() {
-                return this.condition;
+        public int getisNew() {
+                return this.isNew;
         }
 
         public void setCarCode(String carCode) {
@@ -61,7 +61,7 @@ public class Car {
                 this.hasDiscount = discount;
         }
 
-        public void setCondition(String condition) {
-                this.condition = condition;
+        public void setIsNew(int isNew) {
+                this.isNew = isNew;
         }
 }
