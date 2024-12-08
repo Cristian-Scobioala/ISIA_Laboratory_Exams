@@ -1,5 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page import=""java.util.ArrayList"%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,8 +24,8 @@
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-		<meta name="description" content="Add Employee">
-		<title>Add Employee</title>
+		<meta name="description" content="Search Results">
+		<title>Search Results</title>
 
 		<!--additional style-->
 		<style type="text/css">
@@ -51,8 +50,7 @@
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li><a href="search_employee_8XXXXXX.jsp">Search</a></li>			
-						<li class="active"><a href="add_employee_8XXXXXX.jsp">Add Employee</a></li>					
+						<li class="active"><a href="search_car_8XXXXXX.jsp">Search</a></li>				
 					</ul>		
 		
 				</div>
@@ -69,90 +67,17 @@
 
 			<!-- Page Title -->
 			<div class="page-header">
-				<h1>Εισαγωγή Υπαλλήλου</h1>
+				<h1></h1>
 			</div>
-
-<% 
-if (request.getAttribute("error_message") != null) {
-%>
-			<div class="alert alert-danger" role="alert">
-				ArrayList<String> list = request.getAttribute("error_message");
-				<ol>
-				<% for (String item: list) { %>							
-					<li><%=item %></li>
-				<% } %>
-				</ol> 
-			</div>
-<%
-}
-%>
-
-			<!--Form-->
-			<form action="register_employee_controller_8XXXXXX.jsp" method="POST" class="form-horizontal">
-
-				<!--AFM-->
-				<div class="form-group">
-					<label for="afm" class="col-sm-3 control-label main-label">ΑΦΜ: </label>
-					<div class="col-sm-9">
-					<input type="text" name="afm" class="form-control" id="afm" placeholder="999">
-					</div>
-				</div>
-
-				<!--Name-->
-				<div class="form-group">
-					<label for="name" class="col-sm-3 control-label main-label">Όνομα: </label>
-					<div class="col-sm-9">
-					<input type="text" name="name" class="form-control" id="name" placeholder="A">
-					</div>
-				</div>
-
-				<!--Surname-->
-				<div class="form-group">
-					<label for="surname" class="col-sm-3 control-label main-label">Επώνυμο: </label>
-					<div class="col-sm-9">
-						<input type="text" name="surname" class="form-control" id="surname" placeholder="Jo">
-					</div>
-				</div>
-
-				<!--Salary-->
-				<div class="form-group">
-					<label for="salary" class="col-sm-3 control-label main-label">Μισθός: </label>
-					<div class="col-sm-9">
-						<input type="number" name="salary" class="form-control" id="salary" placeholder="-200">
-					</div>
-				</div>
-				
-				<!--Εxternal Partner-->
-				<div class="form-group">
-					<label class="col-sm-3 control-label main-label">Εξωτερικός Συνεργάτης: </label>
-					<div class="col-sm-9">
-						<label class="checkbox-inline">
-						<input type="checkbox" name="external"> ΝΑΙ
-						</label>
-					</div>
-				</div>
-
-				
-				<!--Button Fields-->
-				<div class="form-group">
-					<div class="col-sm-offset-3 col-sm-9">
-						<button type="submit" class="btn btn-success btn-lg">
-						<span class="glyphicon glyphicon-ok"></span> Submit
-						</button> 
-						<button type="reset" class="btn btn-danger btn-lg">
-						<span class="glyphicon glyphicon-remove"></span> Cancel
-						</button> 
-					</div>
-				</div>
-			</form>
+			
 		</div>
 
-		<!-- footer -->
+        <!-- footer -->
         <footer class="navbar-inverse">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <p class="text-center">&copy; Copyright 2022 by examY</p>
+                        <p class="text-center">&copy; Copyright 2021 by examY</p>
                     </div>
                 </div>
             </div>
