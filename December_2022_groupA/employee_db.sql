@@ -7,7 +7,6 @@ CREATE TABLE `employee_exam_12_2022_8xxxxxx` (
   PRIMARY KEY (`afm`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-
 INSERT INTO `employee_exam_12_2022_8xxxxxx` (`afm`,`firstname`,`lastname`,`salary`,`external_partner`) VALUES ('444444444','Lorin','Allitt',1910, 0);
 INSERT INTO `employee_exam_12_2022_8xxxxxx` (`afm`,`firstname`,`lastname`,`salary`,`external_partner`) VALUES ('111111111','Holly','Chant',1300, 0);
 INSERT INTO `employee_exam_12_2022_8xxxxxx` (`afm`,`firstname`,`lastname`,`salary`,`external_partner`) VALUES ('555555555','Alan','Duly',2050, 0);
